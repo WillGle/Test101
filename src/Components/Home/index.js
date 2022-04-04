@@ -1,10 +1,19 @@
 import './home.css'
+import { useNavigate } from "react-router-dom"
 
 function Home() {
+  let navigate = useNavigate()
 
-    const logger = () =>{
-        console.log("Clicked")
-        console.log("Extra")
+  const logger = () =>{
+        navigate("/about")
+    }
+  
+    const doSomething = () =>{
+
+    }
+
+    function doSThing(){
+      
     }
 
     return (
@@ -12,7 +21,7 @@ function Home() {
         <h1>This is my Home</h1>
         <h2>Content of HOME</h2>
         <p>Paragraph of HOME</p>
-        <button onClick={()=>logger}>Click me</button>
+        <button onClick={()=>logger()}>Click me</button>
       </div>
     );
   }
