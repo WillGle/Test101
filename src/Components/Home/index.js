@@ -4,6 +4,7 @@ function Home() {
 
     const logger = () =>{
         console.log("Clicked")
+        console.log("Extra")
     }
 
     return (
